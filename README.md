@@ -1,124 +1,82 @@
 # Network-STP-Simulator
 
-## Project Description
+Welcome to the Network-STP-Simulator project repository!
 
-The Network-STP-Simulator is an API developed in Node.js that simulates the Spanning Tree Protocol (STP), a crucial protocol in computer networks to prevent data traffic loops. This API allows users to submit network topologies and receive the minimum spanning tree, ensuring efficiency and stability in complex topologies.
+## Overview
 
-## Prerequisites
+Network-STP-Simulator is a simulation tool for studying network topologies using the Spanning Tree Protocol (STP). It allows users to create virtual network nodes and edges, calculate minimum spanning trees, and simulate data traffic flow in complex network scenarios.
 
-Before running the project, make sure you have the following items installed on your machine:
+## Features
 
-- Node.js and npm
+- Create and manage network nodes and edges.
+- Calculate minimum spanning trees using the STP algorithm.
+- Simulate data traffic to evaluate network efficiency and stability.
 
-## Database Configuration
+## Installation and Setup
 
-The Network-STP-Simulator does not require a database as it operates entirely in-memory to simulate network topologies and STP operations.
+### Prerequisites
 
-## Project Compilation and Execution
+Before running the simulator, ensure you have the following installed:
 
-To compile and run the project, you can use npm. Simply run the following command in the project's root directory:
+- Node.js (version 12 or above)
+- npm (Node Package Manager)
+- Docker (optional, for containerized execution)
 
-```sh
+### Clone the Repository
+
+```bash
+git clone https://github.com/seu-usuario/network-stp-simulator.git
+cd network-stp-simulator
+```
+
+### Install Dependencies
+
+```bash
 npm install
+```
+
+### Start the Application
+
+To start the simulator locally, run:
+
+```bash
 npm start
 ```
 
-This will compile the project and start the application, which will be available at [http://localhost:3000](http://localhost:3000).
+The simulator will be accessible at `http://localhost:8080`.
 
-## API Endpoints
+### Docker Setup (Optional)
 
-### Network Topology
+If you prefer Docker for deployment, build and run the Docker image:
 
-#### POST /api/simulate
-
-- **Description**: Create a new network topology simulation.
-- **Request Body**: JSON object containing nodes and edges.
-  ```json
-  {
-    "nodes": ["A", "B", "C", "D"],
-    "edges": [["A", "B"], ["A", "C"], ["B", "D"], ["C", "D"]]
-  }
-  ```
-- **Response**: JSON object containing the minimum spanning tree.
-  ```json
-  {
-    "spanningTree": {
-      "A": ["B", "C"],
-      "B": ["D"],
-      "C": [],
-      "D": []
-    }
-  }
-  ```
-
-## Example JSON Response
-
-Example JSON response containing a simulated network topology with minimum spanning tree information:
-
-```json
-{
-  "spanningTree": {
-    "A": ["B", "C"],
-    "B": ["D"],
-    "C": [],
-    "D": []
-  }
-}
-```
-
-In this example, the node `A` is the root bridge, and it has direct connections to nodes `B` and `C`, with node `B` further connecting to node `D`.
-
-## Dockerizing the Application
-
-If you prefer to run the application in a Docker container, a Dockerfile is already configured in the project's root directory. To create a Docker image of the application, run the following command:
-
-```sh
+```bash
 docker build -t network-stp-simulator .
+docker run -p 8080:8080 network-stp-simulator
 ```
 
-Then, you can run the application in a Docker container with the following command:
+### API Documentation
 
-```sh
-docker run -p 3000:3000 network-stp-simulator
-```
+For detailed API documentation, including endpoints and usage examples, refer to [API Documentation](./API-docs/api-documentation.md).
 
-This will start the application in the container and make it available at [http://localhost:3000](http://localhost:3000).
+### Contributing
 
-## Tests
+We welcome contributions to improve Network-STP-Simulator! Please read the [Contributing Guide](./CONTRIBUTING.md) for guidelines.
 
-Unit tests are executed using Mocha and Chai.
+### License
 
-### Running the Tests
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-Make sure you have all dependencies installed and configured correctly. Then, run the unit tests with the following command:
+---
 
-```sh
-npm test
-```
+### Notas sobre o Exemplo
 
-## Pending Tasks
+- **Visão Geral**: Introduz o projeto, destacando suas funcionalidades principais e objetivos.
 
-### Todo
+- **Instalação e Configuração**: Fornece instruções para configurar o ambiente de desenvolvimento, instalar dependências e iniciar o projeto localmente usando Node.js e npm.
 
-- [ ] Setup Development Environment
-- [ ] Implement Graph Data Structure
-- [ ] Develop STP Algorithm
-- [ ] Setup Express Server
-- [ ] Create Simulation Endpoint
-- [ ] Write Unit Tests
-- [ ] Document Project in README.md
-- [ ] Dockerize the application with Dockerfile
+- **Documentação da API**: Um link direto para o documento `API-documentation.md`, detalhando os endpoints da API e seu uso.
 
-## Contributing
+- **Contribuições**: Incentiva a colaboração no projeto, com um link para o guia de contribuição (`CONTRIBUTING.md`).
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to the project.
-
-## Authors
-
-- Vinicius Batista (https://github.com/vinnydev-software) - Principal Developer
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+- **Licença**: Informa sobre a licença do projeto, com um link para o arquivo `LICENSE` para detalhes adicionais.
 
