@@ -116,15 +116,10 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 
 ## Authors
 
-- [Your Name](https://github.com/vinnydev-software) - Principal Developer
+- Vinicius Batista (https://github.com/vinnydev-software) - Principal Developer
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Additional Resources
-
-- [Documentation](https://link_to_documentation)
-- [Article on Spanning Tree Protocol](https://link_to_article)
-```
 
