@@ -1,4 +1,3 @@
-```markdown
 # Network-STP-Simulator
 
 ## Project Description
