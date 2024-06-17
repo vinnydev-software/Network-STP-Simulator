@@ -156,5 +156,4 @@ Currently, the API does not require authentication. All endpoints are publicly a
 
   This API calculates and returns the edges of the minimum spanning tree for the given nodes and edges.
 
----
-\
+
