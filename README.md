@@ -68,13 +68,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ---
 
-### Notas sobre o Exemplo
 
-- **Visão Geral**: Introduz o projeto, destacando suas funcionalidades principais e objetivos.
-
-- **Instalação e Configuração**: Fornece instruções para configurar o ambiente de desenvolvimento, instalar dependências e iniciar o projeto localmente usando Node.js e npm.
-
-- **Documentação da API**: Um link direto para o documento `API-documentation.md`, detalhando os endpoints da API e seu uso.
 
 - **Contribuições**: Incentiva a colaboração no projeto, com um link para o guia de contribuição (`CONTRIBUTING.md`).
 
