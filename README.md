@@ -56,7 +56,7 @@ docker run -p 8080:8080 network-stp-simulator
 
 ### API Documentation
 
-For detailed API documentation, including endpoints and usage examples, refer to [API Documentation](./API-docs/api-documentation.md).
+For detailed API documentation, including endpoints and usage examples, refer to [API Documentation](https://github.com/vinnydev-software/Network-STP-Simulator/blob/main/API-documentation.md).
 
 ### Contributing
 
