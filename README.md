@@ -70,7 +70,3 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 
 
-- **Contribuições**: Incentiva a colaboração no projeto, com um link para o guia de contribuição (`CONTRIBUTING.md`).
-
-- **Licença**: Informa sobre a licença do projeto, com um link para o arquivo `LICENSE` para detalhes adicionais.
-
